@@ -23,7 +23,7 @@ public class Picture {
     private LocalDate createdAt;
     @Column(nullable = false)
     private boolean inArchive;
-
+    @Column(nullable = false)
     private String imagePath;
     @ManyToOne
     @JoinColumn(nullable = false) // для описания столбца внешнего ключа

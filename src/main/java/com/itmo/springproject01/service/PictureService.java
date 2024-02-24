@@ -25,6 +25,7 @@ public class PictureService {
         return pictureRepository.findById(pictureId)
                 .orElseThrow(()->new ShopException("Картина с id = " +
                         pictureId + "не найдена"));
+        //optional контейнер надо извлекать
     }
 
     public List<Picture> getPicturesByGenre(String genreUrl){
